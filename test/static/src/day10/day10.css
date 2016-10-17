@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*
+ m站每日十件_折800css
+ */
+
+body{background-color:#f2f2f2;padding:0 5px;}
+.day10{min-width: 310px;max-width:640px;background-color: #f0f0f0;margin:0 auto; display: none}
+.day10_banner{min-width: 310px;max-width:640px;overflow: hidden; }
+.day10_banner img{display: block;font-size: 0;width: 100%}
+.day10_title{background-color: #fff;min-width: 310px;max-width:640px;vertical-align:middle;line-height:26px;text-indent:4px;font-size: 13px;}
+.list li{min-width: 310px;max-width:640px;margin-top:5px;padding:18px 0 0;background-color:#fff;position: relative;}
+.list li a{display: inline-block;}
+.list li .img{position: relative;min-width: 310px;max-width:640px;}
+.list li .img img{position: relative;width:100%;}
+.list li  .price{display: block;position: absolute;right:0;bottom:3px;background-color: #dad8d8;opacity: 0.8;border-top-left-radius:12px;border-bottom-left-radius:12px;padding-right:10px;height:23px;line-height:23px;color:#e63b53;font-size:18px;padding-left:5px;}
+.list li .title{font-size: 16px;height:33px;line-height:33px;vertical-align:middle;padding:0 9px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color:#333;}
+.list li .xb{font-size: 12px;padding-left: 7px;padding-right:7px;color: #848484; padding-bottom: 10px}
+.list li .tag{display: block;padding:10px 0 15px 7px;color: #848484;font-size: 12px;width:230px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list .tag span{display:inline-block;border:1px solid #e84d63;margin:0 5px;font-size:12px;padding:3px 6px;border-radius: 10px;color:#e84d63;}
+.status{position: absolute;bottom:0;right:20px;width:61px;height:44px;}
+.no_start{background:url(../../img/ico_nostart.png);background-size: 61px 44px;}
+.qiangwan{background:url(../../img/ico_qiangwan.png);background-size: 61px 44px;}
+.jieshu{background:url(../../img/ico_end.png);background-size: 61px 44px;}
+.loading_more{min-width:310px;max-width:640px;height:44px;text-align:center;line-height:44px;vertical-align: middle;color:#a0a0a0;background-color:#fff;margin-top:5px;font-size:12px;}
+.list_end{ width: 100%; height: 60px; background: #ededed; text-align: center }
+.list_end span{ width: 275px; height: 25px; background: url(../../img/sou_no_l.png); background-size: 275px auto; display: inline-block; margin-top: 10px; }

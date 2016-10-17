@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*
+ 支付成功css
+ */
+body{background-color: #fff}
+.success_bg{width: 100%;height:99px;background:url(../../img/success_bgline.png) repeat-x;background-size:auto 99px;border-top:1px solid #def9ff}
+.success_bgimg{width:88px;height:73px;background-image:url(../../img/success_bgimg.png);background-size:88px 73px;margin:26px auto;}
+.success_title{width: 100%;height: 30px;line-height:30px;text-align: center}
+.success_title h1{font-size: 14px;color:#0e9300}
+.activity_img{width: 210px;margin: 0 auto}
+.activity_img a{display:block}
+.activity_img img{width:210px}
+.order_list li{margin-top:10px}
+.tolist{height:15px;margin-left: 10px;background:url(../../img/tolist.png) no-repeat 0 80%;background-size:10px 10px}
+.tolist span{height:15px;line-height:15px;font-size:12px;color:#9b9b9b;margin-left:15px}
+.goods_info{height: 80px;margin:10px 10px 0 10px;border-top: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;display:-webkit-box}
+.goods_info.hover{background-color:#f5f5f5; color: #000;}
+.order_info,.order_moreinfo{height: 60px;margin-top:9px}
+.order_info{-webkit-box-flex:1;border-right: 1px solid #f1f1f1;display:-webkit-box;overflow: hidden}
+.order_info img{width:60px;height:60px;}
+.order_info .more_goodsimg{width: 24px;height:60px;background:url(../../img/more_goods.png) no-repeat  0 center;background-size:24px 7px;margin-left:10px}
+.goods_intro{-webkit-box-flex:1;margin-left:7px;}
+.goods_intro div{width:100%;height:20px;line-height:20px;font-size:12px;color:#9b9b9b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.order_moreinfo{width:75px;text-align: center;padding-top:10px}
+.order_moreinfo span{display:block;line-height: 20px;color:#444444}
+.receive_info,.receive_info_fixed{width:100%;padding-top:5px;padding-bottom:5px}
+.receive_info_fixed{background-color:#FFFFFF;opacity:0.9;position:fixed;bottom:0px;left:0px;z-index:35}
+.receive_userinfo{width:100%;height: 20px;line-height:20px}
+.receive_userinfo span,.receive_address span{color:#444444}
+.receive_name{float:left;margin-left:10px}
+.receive_phone{float:right;margin-right:10px}
+.receive_address{padding-left:10px;padding-right:10px}
+.receive_warn{margin-top:10px;padding:10px;border-top:1px solid #f1f1f1;border-bottom:1px  solid #f1f1f1}
+.receive_warn_normal{color:#a1a1a1}
+.receive_warn_stress{color:#fd7539}
+
+/*下载浮层*/
+.download-float{position: relative; width: 100%;height: 66px;background: url(../../img/dl_bg.jpg) center center no-repeat;background-size: 100% auto;}
+.dl-icon{display: inline-block; margin-left: 4%; margin-top: 6px; width: 43px;height: 56px;background: url(../../img/dl_logo.png) no-repeat;background-size: 100%;}
+.dl-text{display: inline-block; width: 44.7%; font-size: 13px;color: #fff;margin-top: 14px;margin-left: 3%; vertical-align: top;}
+.dl-text p:last-child{margin-top: 5px; width: 100%; margin-left: 0;}
+.dl-btn{display: inline-block;float: right; margin-right: 9.2%; margin-top: 17px; width: 82px;height: 43px;background: url(../../img/dl_btn.png) no-repeat;background-size: 100%; }
+.dl-close{display: inline-block; position: absolute; right: 0px;margin: auto 0; top:0; bottom: 0;width: 18px;height: 18px;  }
+.dl-close i{display: inline-block;width: 9px;height: 9px;background:url(../../img/dl_close.png) no-repeat;background-size: 100%;}

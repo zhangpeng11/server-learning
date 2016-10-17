@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*一键注册专用样式*/
+
+
+body{
+	background-color: #fff;
+}
+.reg_box{padding:10px;}
+.input_box{border-radius: 3px;border:1px solid #e5e5e5;}
+.input_box .input_item{height: 40px;border-bottom:1px solid #e5e5e5;padding-left: 5px;}
+.input_box .input_item:last-child{border-bottom:0;}
+.input_box .tips{border-bottom:1px solid #e5e5e5;padding:5px;color: #848484;background: url("../../img/ico_tips.png");background-size:14px 14px;background-repeat: no-repeat;padding-left: 25px;background-position: 5px 7px;font-size: 12px;}
+.input_box .input_item input{height: 38px;width: 100%;border: none}
+.input_box .input_item.w2 input{width: 70%;}
+.input_box .input_item.w2 #getCaptcha{width: 30%;border:none;height: 40px;background-color: #f9f9f9;border-left:1px solid #e5e5e5;color: #848484;font-size: 12px}
+.zhe800_xy{padding: 20px;color: #848484;}
+.zhe800_xy .ico{display: inline-block;width: 14px;height: 14px;background: url("../../img/ico_ok.png");background-size:contain;vertical-align: -2px;margin-right: 5px;}
+.zhe800_xy.no .ico{background: url("../../img/ico_no.png");background-size:contain;}
+.zhe800_xy a{text-decoration: underline}
+.btn_area{text-align: center}
+.btn_area .btn{display: inline-block;width: 80%;height: 40px;line-height: 40px;background-color: #e63b53;color: #fff;text-align: center;border-radius:3px;}
+.btn_area .btn.hover{ background-color:rgba(0, 0, 0, 0.3); color: #000}

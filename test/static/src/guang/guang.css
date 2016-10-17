@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 值得逛 */
+html{ background: #f2f2f2; }
+figure,figcaption{margin:0;padding:0;border:0;}
+#ct{ background: #f2f2f2; overflow: hidden;padding:0 5px;box-sizing:border-box;}
+/*值得逛副导航 S*/
+
+.gunag_nav_main{ width: 100%; height:40px; display: -webkit-box; -webkit-box-orient: horizontal; background: #fff;padding: 0 10px}
+.gunag_nav_main ul{width: 100%;overflow: hidden;border-bottom: 1px solid #d7d7d7;}
+.gunag_nav_main ul li{float: left;padding:0 12px;text-align: center; font:14px/40px '\5fae\8f6f\96c5\9ed1';color:#999; text-align: center; position: relative}
+.gunag_nav_main ul li.nav_on{color: #e63b53}
+.gunag_nav_main ul li.nav_on:after{height:2px;background:#e63b53;font:0/0 ''; position: absolute; bottom: 0; left:0;width: 100%;content:""}
+
+/*值得逛副导航 E*/
+
+/*值得逛列表 S
+ guang_list_item    : 值得逛商品循环体 ;
+ price_line         : 现价 or 原价 or 折扣;
+ item_tt            : 简介;
+*/
+
+.guang_main{min-width: 310px; max-width: 620px; margin: 0 auto}
+#guang_nav_wrapper{width: 100%; float: left; position: relative; z-index: 1; overflow: hidden;}
+#guang_nav_scroller {width: 2100px; float: left; padding: 0;}
+#guang_nav_scroller ul {display: block; float: left; width: 100%; padding: 0; margin: 0; text-align: left;}
+#guang_nav_scroller ul li {box-sizing: border-box; display: block; float: left;}
+.guanglistBox{display:-webkit-box;-webkit-box-pack:justify;-webkit-box-orient: horizontal}
+.guang_list_box{width:48.71%}
+.guang_list_item{background: #fff;margin-top: 5px;box-sizing:border-box;width: 100%}
+.guang_list_item img{width:100%}
+.guang_list_item .item_tt{font:10px/16px '\5fae\8f6f\96c5\9ed1';padding: 8px;color:#848484;
+	width: 91%;
+	word-wrap: break-word;
+    margin-left: 2px;
+    line-height: 20px;}
+.guang_itemad img{border:1px solid #e3e3e3;width:100%;box-sizing:border-box;}
+.guang_list_item .price_line{height:16px;color:#bbb;font:10px/16px '\5fae\8f6f\96c5\9ed1';padding:10px 8px 2px;overflow: hidden}
+.guang_list_item .price_line .pprice{font-size: 16px;color: #e63b53;margin-right:8px}
+.guang_list_item .price_line .p_zhe{float: right}
+
+/* 值得逛列表 E*/
+
+/*查看更多，end*/
+.loading_more{ width: 100%; text-align: center; padding:15px 0px; font-size: 14px; color: #9b9b9b; background-color: #fff; display: none; float: left}
+.list_end{ width: 100%; height: 60px; text-align: center; display: none; float: left }
+.list_end span{ width: 275px; height: 25px; background: url(../../img/sou_no_end.png); background-size: 275px auto; display: inline-block; margin-top: 10px; }
+
+
+/* 菊花 */
+.loading{ display: inline-block; }
+#loading_init{ width: 100%;  margin-top: 49%; text-align: center; font-size: 14px; color: #9b9b9b; }
+.icon_load{ display: inline-block; width: 29px;height: 29px; text-align:center; vertical-align: middle; background:url("../../img/ico_loading.png"); background-repeat: no-repeat; background-size: contain; margin-right: 10px; }
+.icon_load{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+    -webkit-animation-name:ico_loading;
+    -webkit-animation-duration:1.5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+@-webkit-keyframes ico_loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0)}
+    to { -webkit-transform:rotate(360deg) translateZ(0)}
+}
+
+
+
+

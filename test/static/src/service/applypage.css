@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+售后服务css
+*/
+html{background-color: #f5f5f5;}
+body{background-color: #f5f5f5;}
+
+.service_w .tips{font-size:12px;padding: 10px;line-height: 18px;background-color: #758281;border-bottom:1px solid #ddd;color:#d1dfdd;}
+.service_w .ico_tips{display: inline-block;width: 12px;height:12px;margin-right:8px;background: url("../../img/service/ico_tips.png");background-size: contain;background-repeat: no-repeat;}
+.service_w .tips em{color:#ffffff}
+.service_w .flow_pic{padding: 15px 0;text-align:center;}
+.service_w .refund_flow{display:inline-block;width:246px;height:54px;background:url("../../img/service/refund_flow.png");background-size: 246px 54px;background-repeat: no-repeat;}
+.service_w .aftersale_flow{display:inline-block;width:290px;height:56px;background:url("../../img/service/aftersale_flow.png");background-size: 290px 56px;background-repeat: no-repeat;}
+.input_box li{padding: 17px 10px;background-color: #fff;margin-bottom: 11px;}
+.input_box li.nospace{margin-bottom: 0;padding-bottom: 0;}
+.input_box h3{padding-bottom: 10px;color: #333333;}
+.input_box h3.h3_txt_center{text-align: center;}
+.input_box .amount_show{display:block;height:30px;background-color: #fff;line-height:30px;text-align: center;color: red;font-size: 20px;width: 100%;padding: 5px 0;margin-bottom: 10px;}
+.service_w .txt_input input{height:30px;background-color: #fff;border:1px solid #bebebe;border-radius:3px;width: 100%;text-indent: 1em;padding: 5px 0;margin-bottom: 10px;}
+.service_w .txt_input  .txt_input_msg{display:block;color: #b2b2b2;font-size: 12px;}
+.service_w .ico_star{color: red}
+.service_w .radio{text-align: center;}
+.service_w .radio_item{display:inline-block;width: 137px;height:42px;line-height:42px;text-align:center;vertical-align:middle;background-color: #fff;border:1px solid #d5d5d5;border-radius: 20px;-webkit-border-radius:20px;color: #999999}
+.service_w .radio .radio_item:first-child{margin-right:16px;}
+.service_w .radio_item.on{background-color: #68d894;color: #fff;border:1px solid #68d894;}
+.service_w .selec_cause .item{display: inline-block;padding: 5px 20px;margin-right:15px;margin-bottom:10px;font-size: 12px;color:#b2b2b2;border:1px solid #d5d5d5;border-radius: 3px;-webkit-border-radius: 3px; }
+.service_w .selec_cause .item.on{background-color: #68d894;color: #fff;border:1px solid #68d894;}
+.service_w .textarea_item textarea{width:100%;height: 80px;line-height: 18px;border: 1px solid #bebebe;border-radius: 3px;}
+.service_w  h3 em{color: #b2b2b2;}
+
+/* 图片上传 */
+.upload_box{overflow:hidden}
+.upload_box li{width:93px;height: 93px;float: left;background-color: #e2e2e2;padding: 0;margin-right: 10px;position:relative}
+.upload_box li.add_pic{text-indent: -999em;overflow:hidden;background: url("../../img/service/btn_addpic.png");background-size: contain;}
+.upload_box li input{width: 100%;height: 100%;position: absolute;left: 0;top: 0;opacity: 0;}
+.upload_box li .btn_clear{width: 30px;height: 30px;background:url("../../img/service/btn_clear.png");background-size: contain;position: absolute;right: 0;top: 1px;}
+.upload_box li:last-child{margin-right: 0}
+.upload_tips{color: #e2494d;padding-top: 10px;font-size: 12px;}
+.upload_tips i{display: inline-block;width: 11px;height: 11px;background:url("../../img/service/ico_tips.png");background-size: contain;margin-right: 5px;vertical-align: middle}
+.upload_box li .loading{text-align: center;font-size: 12px;vertical-align: middle;color: #b9b9b9;padding-top:35px;display: block;}
+
+
+.service_w .btn_w{padding:10px; }
+.service_w .btn_w .btn_submit{height: 44px;line-height: 44px;text-align: center;color: #fff;display: block;background-color: #f0646c;border-radius: 3px;font-size: 16px;}
+.service_w .btn_w .btn_submit.hover{background-color:rgba(0, 0, 0, 0.3); color: #000}
+.service_w .err_msg{color: #e63b53;text-align:center;display: none}
+
+
+.service_w .top{position:relative;text-align: center;height:45px;line-height:45px;vertical-align:middle;font-size:18px;border-bottom:1px solid #d5d5d5;background-color: #f8f8f8;color: #333333;}
+.service_w .weiquan_tips{text-align: center;height:30px;line-height: 30px;font-size: 12px;color:#f0646c;}
+

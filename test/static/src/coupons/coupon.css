@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*
+ 优惠券css
+ */
+
+body{background-color: #fff}
+.coupon_nav{
+	display: -webkit-box;
+	width:100%;
+	font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	color: #777;
+	background-color: #fff;
+}
+.coupon_nav span{
+	-webkit-box-flex: 1;
+	display: block;
+	text-align: center;
+}
+.coupon_navon{
+	border-bottom: 1px solid #e63b53;
+	color: #e63b53;
+}
+.coupon_count{
+	font-size: 12px;
+	color: #444444;
+	text-align: center;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+.coupon_count span{
+	display: block;
+	overflow: hidden;
+	padding: 5px 0;
+}
+.price{
+	font-size: 24px;
+	line-height: 24px;
+}
+/*.lower_price{
+	margin-top: 20px;
+	margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+.coupon_paging{
+	font-size: 12px;
+	color: #60656f;
+	text-align: center;
+	overflow: hidden;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.coupon_paging span{
+	display: inline-block;
+	width:60px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	margin:0px 20px;
+	border:1px solid #60656f;
+	border-radius: 3px;
+}
+.shadow{
+	display:none;
+	position: fixed; 
+	width: 100%; 
+	height: 100%; 
+	z-index:99; 
+	background-color: rgba(0, 0, 0, 0.6) ;
+	 top: 0; 
+	 left:0;
+	 -webkit-transition:opacity .3s linear;
+	 transition:opacity .3s linear;
+	 opacity:0;
+	}
+.sdTip{color: #fff; text-align: center; font-size: 16px;}
+.shadow i{margin: 10px auto; display: block; width: 23px; height: 93px; background:url(../../img/coupons/icon_shadowTip.png); }
+.shadowCon{z-index: 101; position: relative;}
+
+.zhe_coupon .coupon_con{display: none}
+.zhe_coupon .coupon_con .loading{text-align: center;padding: 20px 0;}
+.zhe_coupon .coupon_con .nofound{padding-top: 50px;color: #ddd;}
+.platform_type{color: #e63b53;}

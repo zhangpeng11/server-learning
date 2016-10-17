@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*
+手机周边css
+*/
+.zhe_list li{background-color: #ffffff;padding: 10px;padding-right: 0px;border-bottom: 1px solid #E7E6E3; }
+.zhe_list li a{display: block;}
+.zhe_list .item{overflow: hidden;position: relative;}
+.zhe_list .item dt{width: 115px;height:80px;float:left;margin-right: 10px;}
+.zhe_list .item dd{overflow: hidden;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 s*/
+.zhe_list dt .icon{width:43px; height:15px; display: block;position:absolute;top:0px;left:0px;background:url(../../img/new_icon.png) no-repeat;background-size:258px 41px;background-position:100px 100px;}
+.zhe_list dt .jrsx{background-position:0 -26px;}
+.zhe_list dt .sjzx{background-position:-43px -26px;}
+.zhe_list dt .pptm{background-position:-86px -26px;}
+.zhe_list dt .yph{background-position:-129px -26px;}
+.zhe_list dt .bktj{background-position:-172px -26px;}
+.zhe_list dt .ztg{background-position:-215px -26px;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 e*/
+.zhe_list dd .tit_area{position: relative;font-size:14px;color:#333;height: 36px;overflow:hidden; text-overflow: ellipsis;}
+.tit_area span{display: block;}
+.long{padding-right:35px;}
+.short{padding-right: 42px;}
+.zhe_list dd .attr{font-size: 11px;color: #9b9b9b;margin-top:5px;overflow: hidden;}
+.zhe_list dd .price{display: inline-block;color: #e63b53;font-size: 16px;padding-right: 5px;text-overflow: ellipsis;}
+.zhe_list dd .integral{ padding-right: 10px; float: right}
+.zhe_list dd .discount{display: inline-block;margin-right: 22px;}
+.zhe_list dd .discount i.by{display: inline-block; color: #e63b53; font-size:9px;  border: 1px solid #e63b53; border-radius: 2px;vertical-align:top;margin-top:2px; padding:0;line-height: 11px; height:11px;}
+.zhe_list dd .sale_num{display: inline-block;}
+.zhe_list dd .mail{display: inline-block;float:right;margin-right: 10px;}
+.zhe_list dd .icon{position: absolute;top:4px;right:5px;display: block;height:13px;vertical-align:middle;}
+.new{width:28px; background:url("../../img/ico_new.png") no-repeat;background-size: contain;}
+.nostart{width: 28px;background: url("../../img/ico_nostart2.png");background-size:contain;background-repeat: no-repeat;}
+.qiangwan{width: 28px;background: url("../../img/ico_qiangwan2.png");background-size:contain;background-repeat: no-repeat;}
+.end{width: 28px;background: url("../../img/ico_nostart2.png");background-size:contain;background-repeat: no-repeat;}
+.tel{width: 36px;background: url("../../img/ico_sjzx.png");background-size:contain;background-repeat: no-repeat;}
+
+.loading_more{text-align: center;padding:15px 0px;font-size: 14px;color: #9b9b9b;background-color: #fff;}
+.icon_load{ display: inline-block; width: 20px;height: 20px; text-align:center; vertical-align: middle; background:url("../../img/ico_loading.png"); background-repeat: no-repeat; background-size: contain; margin-right: 10px; }
+.icon_load{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+    -webkit-animation-name:ico_loading;
+    -webkit-animation-duration:1.5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+@-webkit-keyframes ico_loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0);}
+    to { -webkit-transform:rotate(360deg) translateZ(0);}
+}
+
+.list_end{ width: 100%; height: 60px; background: #ededed; text-align: center }
+.list_end span{ width: 275px; height: 25px; background: url(../../img/sou_no_l.png); background-size: 275px auto; display: inline-block; margin-top: 10px; }
+
+
+
+
+
+
+
+
+

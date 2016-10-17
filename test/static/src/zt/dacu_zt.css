@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.loading{ display: inline-block}
+#loading_init{ width: 100%; margin-top: 49%; text-align: center; font-size:0.875rem; color: #9b9b9b}
+.icon_load{ display: inline-block; width:1.8125rem;height:1.8125rem; text-align:center; vertical-align: middle; background:url(../../img/ico_loading.png); background-repeat: no-repeat; background-size: contain; margin-right: 10px}
+.icon_load{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+    -webkit-animation-name:ico_loading;
+    -webkit-animation-duration:1.5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+@-webkit-keyframes ico_loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0)}
+    to { -webkit-transform:rotate(360deg) translateZ(0)}
+}
+
+/**
+专题
+*/
+.zt_w{width:320px;background-color: #f0f0f0;margin:0 auto;}
+.zt_w .banner{ width: 320px;overflow: hidden;margin:0 auto 10px;}
+.zt_w .banner img{display: block;font-size: 0}
+.zt_w .category-title{width:320px;height:29px;position:relative;line-height: 29px;padding-left:20px;margin-bottom:12px;vertical-align: middle;font-size:16px;color:#e63b53;background-color: #fff;}
+.zt_w .category-title:before{content: "";width:3px;height:14px;background-color:#e63b53;position: absolute;top: 8px;left:13px;margin: 0;padding: 0;}
+.zt_w .list{width:314px;padding-left:6px;height:auto;}
+.zt_w .list li{display: inline-block;height:230px;width: 151px;overflow: hidden;margin-bottom: 10px;}
+.zt_w .list li:nth-child(2n+1){margin-right: 6px}
+.zt_w .img .icon{display: block;position:absolute;top:0px;left:0px;}
+.tmall{width:12px;height:12px;background:url("../../img/ico_tmall.png");background-size: 12px auto;}
+.temai{width:37px;height:16px;background:url("../../img/shop_ico.png");background-size: 37px 16px;}
+.zt_w .list .img{width:151px;height:170px;position:relative;}
+.zt_w .list .attr{ padding: 7px 6px; font-size: 12px; background-color: #fff;}
+.zt_w .list .price{ display: inline-block;  color: #e63b53; font-size: 14px; padding-right: 6px; }
+.zt_w .list del{color: #a0a0a0;}
+.zt_w .list .discount{ float:right;color: #a0a0a0 }
+.zt_w .list .title{ font-size: 12px; line-height: 20px; padding-top: 10px; color: #444;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+
+.not_data{margin:20% auto 0;font:14px/20px '\5fae\8f6f\96c5\9ed1'; width: 180px;text-align: center;}
+.not_data i{background: url(../../img/img_500.png) no-repeat;width:86px;height:103px;background-size: contain;display:block; margin: 0 auto 10px}

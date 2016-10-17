@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*
+m站精品预告_折800css
+ */
+
+body{background-color:#f2f2f2;padding:0 5px;}
+.jingpin_w{width:100%;height:auto;background-color: #f0f0f0;margin:0 auto; padding-top: 6px}
+.jingpin_w .list{min-width:310px;max-width:640px;height:auto;margin:0 auto;font-size: 0px;}
+.jingpin_w .list li{width:48.71%; background: #fff; position: relative;margin-bottom: 6px;display: inline-block}
+.jingpin_w .list li:nth-child(2n){margin-left:8px;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 s*/
+.jingpin_w .img .icon{width:25px; height:26px; display: block;position:absolute;top:0px;left:6px;background:url(../../img/new_icon.png) no-repeat;background-size:258px 41px;background-position:100px 100px;}
+.jingpin_w .img .jrsx{background-position:0 0;}
+.jingpin_w .img .sjzx{background-position:-25px 0;}
+.jingpin_w .img .pptm{background-position:-50px 0;}
+.jingpin_w .img .yph{background-position:-75px 0;}
+.jingpin_w .img .bktj{background-position:-100px 0;}
+.jingpin_w .img .ztg{background-position:-125px 0;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 e*/
+.jingpin_w .list .img{width:100%;position:relative;}
+.jingpin_w .list .img img{width:100%;}
+.jingpin_w .list .time{display: block;width:151px;height:20px;line-height:20px;text-align:center;vertical-align:middle;color:#fff;font-size:12px;background-color:#6d6d6d;opacity:0.8;position: absolute;bottom: 0;left:0;}
+.jingpin_w .list .attr{ padding: 7px 6px; font-size: 11px; background-color: #fff;}
+.jingpin_w .list .price{ display: inline-block;  color: #e63b53; font-size: 14px; padding-right: 6px; }
+.jingpin_w .list del{color: #a0a0a0;}
+.jingpin_w .list .discount{ float:right;color: #a0a0a0 }
+.jingpin_w .list .title{ font-size: 14px; line-height: 20px; padding-top:5px; color: #444;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.loading_more{min-width:310px;max-width:640px;height:44px;text-align:center;line-height:44px;vertical-align: middle;color:#a0a0a0;background-color:#fff;font-size:12px;}
+.jingpin_w .dialog{position: fixed;left:50%;top:50%;opacity:0.9;z-index:100;width:310px;height:164px;margin-left:-160px;margin-top:-82px;background-color: #6d6d6d;display: none;}
+.jingpin_w .dialog .close{display:block;padding:5px 9px;text-align: right;}
+.jingpin_w .dialog img{display: inline-block;}
+.jingpin_w .dialog .btn_area{width:120px;height:132px;float:right;padding-right: 24px;padding-top:5px;}
+.jingpin_w  .btn_area span{text-align: center;display: block;color: #fff;margin-top:7px; }
+.jingpin_w .btn_area .btn{background-color: #e63b53;width:77px;height:25px;border-radius:3px;line-height:25px;vertical-align:middle;text-align:center;font-size:12px;margin-left:auto;margin-right: auto;}
+.icon_load{ display: inline-block; width: 20px;height: 20px; text-align:center; vertical-align: middle; background:url("../../img/ico_loading.png"); background-repeat: no-repeat; background-size: contain; margin-right: 10px; }
+.icon_load{ -webkit-transform:rotate(0deg) translateZ(0); -webkit-transition-duration:0ms;  -webkit-animation-name:ico_loading; -webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite; -webkit-animation-timing-function:linear;}
+@-webkit-keyframes ico_loading { from { -webkit-transform:rotate(0deg) translateZ(0);}to { -webkit-transform:rotate(360deg) translateZ(0);}}

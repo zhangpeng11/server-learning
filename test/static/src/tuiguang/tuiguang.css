@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/**
+ * 推广页css
+ * @date    2015-05-27 14:52:22
+ */
+html,#ct,body{background-color:#eee;}
+.topbar .btn_tohome{display:block;width:35px;height:44px;position:absolute;left:5px;top:0;background:url(../../img/gohome_w.png) 13px 12px no-repeat;background-size:66%;}
+#loading_init{width:100%;margin-top:49%;text-align:center;font-size:14px;color:#9b9b9b;}
+#loading{color:#999;}
+.loading{display:inline-block;}
+.loading_more{display: none;text-align:center;padding:15px 0px;font-size:14px;color:#9b9b9b;background-color:#eee;}
+.icon_load{-webkit-transform:rotate(0deg) translateZ(0);-webkit-transition-duration:0ms;-webkit-animation-name:ico_loading;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;}
+.icon_load{display:inline-block;width:29px;height:29px;text-align:center;vertical-align:middle;background:url("../../img/ico_loading.png");background-repeat:no-repeat;background-size:contain;margin-right:10px;}
+.tg-list-main{min-width:310px;max-width:620px;margin:0 auto;padding:8px 5px 0 5px;}
+.tg-list{width:100%;display:inline-block;}
+.tg-list li{width:48.71%;background:#fff;position:relative;margin-bottom:6px;display:inline-block;}
+.tg-list li:nth-child(2n){margin-left:2.5%;}
+.tg-list li a{display: block;position: relative;}
+.tg-list li a img{width:100%;}
+.tg-list li a .icon{position: absolute;top:0;left: 0;}
+.tg-list li a .tmall{width:12px;height:12px;background:url(../../img/ico_tmall.png) no-repeat;background-size:12px auto;}
+.tg-list li a .taobao{width:12px;height:12px;background:url(../../img/ico_taobao.png) no-repeat;background-size:12px auto;}
+.tg-list li a .temai{width:37px;height:16px;background:url(../../img/shop_ico.png) no-repeat;background-size:contain;}
+.price_line{width:100%;height:26px;line-height:26px;}
+.price_line .pprice{font-size:16px;color:#e63b53;margin:0 5px;}
+.price_line del{font-size:12px;color:#848484;}
+.dis_line{width:100%;height:26px;line-height:26px;font-size:12px;color:#a0a0a0;display:table;box-sizing:border-box;padding:0 8px;}
+.dis_line span{display:table-cell;}
+.dis_line .zhekou{text-align:right;}
+.dis_line .postage{width:32%;}
+.item_tt{margin:0 5px;height:26px;line-height:26px;font-size:14px;color:#444;}
+.item_tt span{width:100%;height:26px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.list_end{width:100%;height:60px;background:#eee;text-align:center;}
+.list_end span{width:275px;height:25px;background:url(../../img/sou_no_l.png);background-size:275px auto;display:inline-block;margin-top:10px;}

@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*
+m站专题_折800css
+ */
+
+body{background-color:#f2f2f2;padding:0 5px;}
+.zt_w{width:100%;background-color: #f0f0f0;margin:0 auto;}
+.zt_w .banner{min-width:310px;max-width:640px;overflow: hidden;margin:0 auto 10px;}
+.zt_w .banner img{display: block;font-size: 0; width:100%}
+.zt_w .category-title{min-width:310px;max-width:640px;height:29px;position:relative;line-height: 29px;padding-left:20px;margin-bottom:12px;vertical-align: middle;font-size:16px;color:#e63b53;background-color: #fff;}
+.zt_w .category-title:before{content: "";width:3px;height:14px;background-color:#e63b53;position: absolute;top: 8px;left:13px;margin: 0;padding: 0;}
+.zt_w .list{min-width:310px;max-width:640px;height:auto;margin:0 auto;font-size: 0px;}
+.zt_w .list li{width:48.71%; background: #fff; position: relative;margin-bottom: 6px;display: inline-block;}
+.zt_w .list li:nth-child(2n){margin-left:8px;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 s*/
+.zt_w .img .icon{width:25px; height:26px; display: block;position:absolute;top:0px;left:6px;background:url(../../img/new_icon.png) no-repeat;background-size:258px 41px;background-position:100px 100px;}
+.zt_w .img .jrsx{background-position:0 0;}
+.zt_w .img .sjzx{background-position:-25px 0;}
+.zt_w .img .pptm{background-position:-50px 0;}
+.zt_w .img .yph{background-position:-75px 0;}
+.zt_w .img .bktj{background-position:-100px 0;}
+.zt_w .img .ztg{background-position:-125px 0;}
+/*新增角标 今日上新 手机专享 品牌特卖 优品汇 爆款推荐 主题馆 e*/
+.zt_w .list .img{width:100%;position:relative;}
+.zt_w .list .img img{width:100%;}
+.zt_w .list .attr{ padding: 7px 6px; font-size: 11px; background-color: #fff;}
+.zt_w .list .price{ display: inline-block;  color: #fd7d45;; font-size: 16px; padding-right: 6px; }
+.zt_w .list del{color: #a0a0a0;}
+.zt_w .list .discount{ float:right;color: #a0a0a0 }
+.zt_w .list .title{ font-size: 14px; line-height: 20px; padding-top:5px; color: #444;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.loading{ display: inline-block; }
+.icon_load{ display: inline-block; width:22px; height:18px; text-align:center; vertical-align: middle; background:url(../../img/loading.gif); background-repeat: no-repeat; background-size: contain; }
+#loading_init{ width: 100%; position: absolute; top: 49%; text-align: center; font-size: 14px; color: #9b9b9b; background-color: #fff; }
