@@ -13,14 +13,29 @@
             <div class="phoneContain">
                 <img src="" />
             </div>
-            <div class="photoInf"></div>
         </div>
-        <div class="personInfo"></div>
+        <div class="personInfo">
+            <div class="baseInfo"><span class="user_icon"></span><span class="name">姓名</span><span class="job">应聘职位</span></div>
+             <ul class="base_list">
+                 <li><div class="school"><p>毕业院校</p><p class="school_name">请写下您的毕业院校</p></div></li>
+                 <li><div class="phone"><p>phone</p><p class="phone_num">您的联系电话</p></div></li>
+                 <li><div class="email"><p>E-mail</p><p class="email_address">您的电子邮箱</p></div></li>
+                 <li><div class="address"><p>联系地址</p><p class="address_name">您的联系地址</p></div></li>
+              </ul>
+            <div class="baseInfo"><span class="user_icon"></span><span class="name">性格</span><span class="job">Character</span></div>
+             <ul class="base_list">
+                 <li><div class="school"><p>毕业院校</p><p class="school_name">请写下您的毕业院校</p></div></li>
+                 <li><div class="phone"><p>phone</p><p class="phone_num">您的联系电话</p></div></li>
+                 <li><div class="email"><p>E-mail</p><p class="email_address">您的电子邮箱</p></div></li>
+                 <li><div class="email"><p>联系地址</p><p class="address">您的联系地址</p></div></li>
+              </ul>
+        </div>
         <div class="character"></div>
         <div class="hobit"></div>
     </div>
 
     <div id="context">
+
     </div>
 </div>
 {{/block}}

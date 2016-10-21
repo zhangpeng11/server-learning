@@ -1,0 +1,15 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("head")}}
+    <style>
+
+    </style>
+{{/block}}
+
+{{#block ("body")}}
+<div id="header">
+    <span class="tab_icon"></span><span class="title">º«’À±æ</span><span class="edit_icon"></span>
+</div>
+<div id="ct">
+</div>
+{{/block}}
