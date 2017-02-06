@@ -1,0 +1,14 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("body")}}
+
+<div id="ct">
+    <div class="table">
+            <p>mail_address: <input type="text" name="mail_address" /></p>
+            <p>password: <input type="text" name="password" /></p>
+            <input type="submit" onclick="submit()"/>
+    </div>
+</div>
+
+<script src="./passport2.js"></script>
+{{/block}}

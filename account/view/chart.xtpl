@@ -1,0 +1,16 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("body")}}
+
+<div id="header">
+    <span class="cancel_icon"></span><span class="title">Chart</span><span class="sendBtn">send</span>
+</div>
+
+<div id="ct">
+    <canvas id="mycanvas">
+
+    </cancas>
+</div>
+<link rel="stylesheet" href="./chart.css">
+<script src="./chart2.js"></script>
+{{/block}}

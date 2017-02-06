@@ -14,19 +14,19 @@ var options = {
 var pool = mysql.createPool(options),
     p = wrapper(pool);
 
-//Ö´ĞĞËùÓĞsqlÓï¾ä
+//Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sqlï¿½ï¿½ï¿½
 function execQuery(sql, values, callback) {
     var errinfo;
     pool.getConnection(function(err, connection) {
         if (err) {
-            errinfo = 'DB-»ñÈ¡Êı¾İ¿âÁ¬½ÓÒì³££¡';
+            errinfo = 'DB-ï¿½ï¿½È¡ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½';
             console.log(errinfo);
             throw errinfo;
         } else {
             var querys = connection.query(sql, values, function(err, rows) {
                 release(connection);
                 if (err) {
-                    errinfo = 'DB-SQLÓï¾äÖ´ĞĞ´íÎó:' + err;
+                    errinfo = 'DB-SQLï¿½ï¿½ï¿½Ö´ï¿½Ğ´ï¿½ï¿½ï¿½:' + err;
                     console.log(errinfo);
                     //throw errinfo;
                     callback(err);
@@ -43,14 +43,14 @@ function release(connection) {
     try {
         connection.release(function(error) {
             if (error) {
-                console.log('DB-¹Ø±ÕÊı¾İ¿âÁ¬½ÓÒì³££¡');
+                console.log('DB-ï¿½Ø±ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½');
             }
         });
     } catch (err) {}
 }
 
 function execUpdate(sql, values, callback){
-    execQuery(sql, values, function(result) {
+    execQuery(sql, values, function(err,result) {
         if (callback) {
             var affectedRows = 0;
             if (result) {
@@ -63,12 +63,12 @@ function execUpdate(sql, values, callback){
     });
 }
 
-//Ö´ĞĞsqlÓï¾ä£¬·µ»ØÓ°ÏìÌõÊı
+//Ö´ï¿½ï¿½sqlï¿½ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 exports.update = function(sql, values, callback) {
     execUpdate(sql, values, callback);
 }
 
-//²éÑ¯·ÖÒ³
+//ï¿½ï¿½Ñ¯ï¿½ï¿½Ò³
 exports.queryPage = function(sql, values, page, size, callback) {
     if (page > 0) {
         page--;
@@ -107,10 +107,10 @@ exports.getById = function(tablename, id){
     });
 }
 
-//²éÑ¯¶ÔÏó
+//ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
 exports.getObject = function(tablename, values, callback) {
     var sql = 'SELECT * FROM ?? WHERE ?';
-    execQuery(sql, [tablename, values], function(result) {
+    execQuery(sql, [tablename, values], function(err, result) {
         if (callback) {
             if (result && result.length > 0) {
                 callback(result[0]);
@@ -121,13 +121,15 @@ exports.getObject = function(tablename, values, callback) {
     });
 }
 
-//Ìí¼ÓÒ»Ìõ¼ÇÂ¼
-exports.addObject = function(tablename, values, callback) {
+//ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Â¼
+exports.addObject = function(tablename, money, type, callback) {
     var sql = 'INSERT INTO ?? SET ?';
+    var date = new Date();
+    var values = {name:"å°æ˜",money:money,date:date,type:type}
     execUpdate(sql, [tablename, values], callback);
 }
 
-//¸üĞÂ¼ÇÂ¼
+//ï¿½ï¿½ï¿½Â¼ï¿½Â¼
 exports.updateObject = function(tablename, values, id, callback) {
     var sql = 'UPDATE ?? SET ? WHERE ?';
     execUpdate(sql, [tablename,
@@ -135,8 +137,23 @@ exports.updateObject = function(tablename, values, id, callback) {
     ], callback);
 }
 
-//É¾³ı¼ÇÂ¼
-exports.deleteObject = function(tablename, values, callback) {
+//É¾ï¿½ï¿½ï¿½ï¿½Â¼
+exports.deleteObject = function(tablename, id, callback) {
+    var values = {id:id};
     var sql = 'DELETE FROM ?? WHERE ?';
     execUpdate(sql, [tablename, values], callback);
+}
+
+//ï¿½ï¿½Ñ¯È«ï¿½ï¿½ï¿½ï¿½Â¼
+exports.selectAll = function(tablename) {
+    return new Promise(function(resolve, reject){
+        var sql = 'select * from ?? order by date asc';
+        execQuery(sql,tablename, function(err, rows){
+            if(err){
+                reject(err);
+            }else{
+                resolve(rows);
+            }
+        })
+    });
 }

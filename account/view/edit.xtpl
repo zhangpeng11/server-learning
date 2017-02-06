@@ -1,0 +1,48 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("body")}}
+<div id="header">
+    <span class="cancel_icon"></span><span class="title">Edit</span><span class="sendBtn">send</span>
+</div>
+<div id="ct">
+    <div class="cate_list" data-name="income">
+        <div class="first line">
+            <div class="cate_item" data-name="income" data-type="6"><span class="income icon"></span><span class="cate_title">income</span></div>
+        </div>
+        <div class="second line">
+            <div class="cate_item" data-name="clothse" data-type="2"><span class="clothse icon"></span><span class="cate_title">clothse</span></div>
+            <div class="cate_item" data-name="food" data-type="3"><span class="food icon"></span><span class="cate_title">food</span></div>
+            <div class="cate_item" data-name="hotel" data-type="5"><span class="hotel icon"></span><span class="cate_title">hotel</span></div>
+            <div class="cate_item" data-name="transport" data-type="1"><span class="transport icon"></span><span class="cate_title">transport</span></div>
+        </div>
+        <div class="third line">
+            <div class="cate_item" data-name="shopping"  data-type="4"><span class="shopping icon"></span><span class="cate_title">shoppping</span></div>
+            <div class="cate_item" data-name="else"  data-type="7"><span class="else icon"></span><span class="cate_title">else</span></div>
+        </div>
+    </div>
+    <div class="calculator">
+        <div class="show_line">
+            <div class="calculate_item" data-name="else"  data-type="7"><span class="else calculate_icon" ></span><span class="calculate_name">else</span></div>
+            <div class="num"><span class="calculate_currency">$ </span><span class="calculate_num">0</span></div>
+        </div>
+        <div class="keyboard">
+            <table>
+                <tr>
+                    <td>1</td><td>2</td><td>3</td><td class="back">E</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>5</td><td>6</td><td class="opation">+</td>
+                </tr>
+                <tr>
+                    <td>7</td><td>8</td><td>9</td><td class="opation">-</td>
+                </tr>
+                <tr>
+                    <td class="clear">C</td><td>0</td><td class="dot">.</td><td class="opation">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="./edit.css">
+<script src="./edit2.js"></script>
+{{/block}}

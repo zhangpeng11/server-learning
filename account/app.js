@@ -52,6 +52,7 @@ var staticCache = require('koa-static-cache');
 var staticDir = config.staticDir;
 app.use(staticCache(staticDir+'/js'));
 app.use(staticCache(staticDir+'/css'));
+app.use(staticCache(staticDir+'/image'));
 
 //路由
 var router = require('koa-router');

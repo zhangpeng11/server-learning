@@ -1,15 +1,31 @@
 {{extend ("./layout/layout")}}
 
-{{#block ("head")}}
-    <style>
-
-    </style>
-{{/block}}
-
 {{#block ("body")}}
-<div id="header">
-    <span class="tab_icon"></span><span class="title">º«’À±æ</span><span class="edit_icon"></span>
+<div class="user">
+    <div class="background_pic">
+        <div class="user_Info">
+            <span class="head_pic"></span>
+            <span class="user_name">Da Peng</span>
+        </div>
+    </div>
+    <div class="user_list">
+        <ul>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+            <li class="chart"><span class="list_icon chart"></span><span class="chart_name">chart</span></li>
+        </ul>
+    </div>
 </div>
-<div id="ct">
-</div>
+<article class="main">
+    <div id="header">
+        <span class="tab_icon"></span><span class="title">Account Book</span><span class="edit_icon"></span>
+    </div>
+    <div id="ct">
+    </div>
+</article>
+<link rel="stylesheet" href="./index.css">
+<script src="./index2.js"></script>
 {{/block}}
