@@ -10,7 +10,7 @@ module.exports = {
     },
 
     getInfo: function *(next){
-        var data = yield database.selectAll("userInfo");
+        var data = yield database.selectAll("userinfo");
         console.log("result:" + JSON.stringify(data));
         if(data){
             this.body = data;

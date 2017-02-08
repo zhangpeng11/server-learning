@@ -9,7 +9,7 @@ var account = {
         $.ajax({
             type: "get",
             url: "./getInfo",
-            data:{id:1},
+            data:{id:4},
             success: function(data){
                 var listHtmlStr = '<ul class="account_list">';
                 if(data && data.length>0){

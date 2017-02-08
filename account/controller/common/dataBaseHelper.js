@@ -7,8 +7,8 @@ var options = {
     host : 'localhost',
     port : 3306 ,
     database : 'form_data',
-    user: 'root',
-    password : '123'
+    user : 'root',
+    password : '1234567'
 };
 
 var pool = mysql.createPool(options),
@@ -19,14 +19,14 @@ function execQuery(sql, values, callback) {
     var errinfo;
     pool.getConnection(function(err, connection) {
         if (err) {
-            errinfo = 'DB-��ȡ���ݿ������쳣��';
-            console.log(errinfo);
+            errinfo = 'DB-数据库连接异常';
+            console.log(err);
             throw errinfo;
         } else {
             var querys = connection.query(sql, values, function(err, rows) {
                 release(connection);
                 if (err) {
-                    errinfo = 'DB-SQL���ִ�д���:' + err;
+                    errinfo = 'DB-SQL语句报错:' + err;
                     console.log(errinfo);
                     //throw errinfo;
                     callback(err);
@@ -147,7 +147,7 @@ exports.deleteObject = function(tablename, id, callback) {
 //��ѯȫ����¼
 exports.selectAll = function(tablename) {
     return new Promise(function(resolve, reject){
-        var sql = 'select * from ?? order by date asc';
+        var sql = 'select * from ??';
         execQuery(sql,tablename, function(err, rows){
             if(err){
                 reject(err);
